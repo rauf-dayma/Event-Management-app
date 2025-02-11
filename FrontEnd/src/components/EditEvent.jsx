@@ -35,7 +35,7 @@ const EditEvent = () => {
   const fetchEventDetails = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:5000/api/events/${id}`, {
+      const response = await fetch(`https://event-management-app-0.onrender.com/api/events/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -95,7 +95,7 @@ const EditEvent = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/events/${id}`, {
+      const response = await fetch(`https://event-management-app-0.onrender.com/api/events/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

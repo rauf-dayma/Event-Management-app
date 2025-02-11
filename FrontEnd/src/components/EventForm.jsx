@@ -41,7 +41,7 @@ const EventForm = ({ onEventCreated }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5000/api/events", {
+    fetch("https://event-management-app-0.onrender.com/api/events", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(eventData),

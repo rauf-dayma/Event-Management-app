@@ -24,7 +24,7 @@ function Register() {
 
     console.log("Registering user:", name, email, password);
     try {
-      const url = `http://localhost:5000/api/auth/register`; // Adjust API endpoint
+      const url = `https://event-management-app-0.onrender.com/api/auth/register`; // Adjust API endpoint
       const response = await fetch(url, {
         method: "POST",
         headers: {

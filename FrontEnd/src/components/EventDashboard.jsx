@@ -72,7 +72,7 @@ const EventDashboard = () => {
     }
 
     try {
-      const API_BASE_URL = "http://localhost:5000";
+      const API_BASE_URL = "https://event-management-app-0.onrender.com";
 
       const response = await fetch(`${API_BASE_URL}/api/events`, {
         method: "POST",

@@ -24,7 +24,7 @@ function Login() {
     console.log("Attempting to login with:", email, password);
   
     try {
-      const url = "http://localhost:5000/api/auth/login";
+      const url = "https://event-management-app-0.onrender.com/api/auth/login";
       const response = await fetch(url, {
         method: "POST",
         headers: {

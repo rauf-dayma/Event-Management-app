@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     // Fetch events from backend API
-    fetch("http://localhost:5000/api/events")
+    fetch("https://event-management-app-0.onrender.com/api/events")
       .then((res) => res.json())
       .then((data) => setEvents(data))
       .catch((err) => console.error("Error fetching events:", err));
