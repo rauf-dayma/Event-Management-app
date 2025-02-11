@@ -1,0 +1,92 @@
+/* Modern Event Dashboard */
+.EventDashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Event Box with Glassmorphism Effect */
+  .eventBox {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 420px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .eventBox:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Form Styling */
+  .eventForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* Input Fields */
+  .eventFormInput {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .eventFormInput::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .eventFormInput:focus {
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Submit Button */
+  .eventBtn {
+    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+  }
+  
+  .eventBtn:hover {
+    background: linear-gradient(135deg, #218838 0%, #1e7e34 100%);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .eventBox {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .eventFormInput {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .eventBtn {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  }
+  

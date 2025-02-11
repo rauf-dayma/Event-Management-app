@@ -1,0 +1,124 @@
+/* Modern Event Details Styling */
+.event-details-container {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: transform 0.3s ease;
+  }
+  
+  .event-details-container:hover {
+    transform: scale(1.02);
+  }
+  
+
+  /* Event Image */
+  .event-image {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Event Details */
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .event-description {
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    opacity: 0.85;
+    margin-bottom: 15px;
+  }
+  
+  /* Date and Time */
+  p {
+    font-size: 1rem;
+    color: #e3e3e3;
+  }
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  /* Common Button Styling */
+  .join-button, .edit-button, .delete-button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Join Button */
+  .join-button {
+    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+    color: white;
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
+  }
+  
+  .join-button:hover {
+    background: linear-gradient(135deg, #218838 0%, #1e7e34 100%);
+    transform: scale(1.05);
+  }
+  
+  /* Edit Button */
+  .edit-button {
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    color: black;
+    box-shadow: 0 4px 10px rgba(255, 193, 7, 0.3);
+  }
+  
+  .edit-button:hover {
+    background: linear-gradient(135deg, #e0a800 0%, #d39e00 100%);
+    transform: scale(1.05);
+  }
+  
+  /* Delete Button */
+  .delete-button {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+    color: white;
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3);
+  }
+  
+  .delete-button:hover {
+    background: linear-gradient(135deg, #c82333 0%, #bd2130 100%);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 500px) {
+    .event-details-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .button-group {
+      flex-direction: column;
+    }
+  
+    .join-button, .edit-button, .delete-button {
+      width: 100%;
+      margin-top: 8px;
+    }
+  }
+  

@@ -1,0 +1,39 @@
+.navbar {
+  background: #333;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-links a, .logout-btn {
+  color: white;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  color: red;
+}
